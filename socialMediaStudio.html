@@ -28,35 +28,967 @@
             </div>
 
             <nav>
-                <div class="navInfo">
-                    <div class="logo">
-                        <a href="">
-                            <img src="./images/logo.svg" alt="">
-                        </a>
+
+                <div class="logo">
+                    <a href="">
+                        <img src="./images/logo.svg" alt="">
+                    </a>
+                    <div class="hamBurger">
+                        <input type="checkbox" id="toggle" style="display:none;">
+                        <label class="toggle-btn toggle-btn__cross" for="toggle">
+                            <div class="cross-btn-image">
+                                <div class="bar bar-1"></div>
+                                <div class="bar bar-2"></div>
+                                <div class="bar bar-3"></div>
+                            </div>
+                        </label>
                     </div>
+                </div>
+                <div class="navContent navHidden">
+
+
                     <div class="navLinks">
                         <ul>
-                            <li>
-                                <a href=""><span>Product</span><img class="chevronDown"
-                                        src="./images/chevron-up-solid.svg" alt=""></a>
+                            <li id="navProducts" class="">
+                                <a class="anchor"><span>Products</span><i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="navHoverContent hidden">
+                                    <div class="navHoverUpper">
+                                        <div class="navHoverProduct smStudio">
+
+
+                                            <div class="productInfo">
+                                                <div class="peoductImg">
+                                                    <img src="./images/social-blue.svg" alt="">
+                                                </div>
+                                                <div class="productInfoDetail">
+                                                    <h3><span>Social Media Studio</span>
+                                                        <a class="hidden" href=""><span>See all features </span><i
+                                                                class="fa-solid fa-chevron-right"></i></a>
+                                                    </h3>
+                                                    <p>The all-in-one tool for Social Media Marketing to reach wider
+                                                        audience</p>
+                                                </div>
+                                            </div>
+                                            <div class="productNavDetails">
+                                                <ul>
+                                                    <li>Post Scheduling </li>
+                                                    <li>Content Calendar Management </li>
+                                                    <li>Page & Post Analytics </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Cross Channel Posting</li>
+                                                    <li>Content Publishing Report</li>
+                                                    <li>Post Click Tracking</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Trackable Short URLs</li>
+                                                    <li>Task Management</li>
+                                                    <li>Brand Media Storage</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="navHoverProduct emailStudio">
+
+
+                                            <div class="productInfo">
+                                                <div class="peoductImg">
+                                                    <img src="./images/email-blue.svg" alt="">
+                                                </div>
+                                                <div class="productInfoDetail">
+                                                    <h3><span>EmailStudio</span>
+                                                        <a href=""><span>See all features</span><i
+                                                                class="fa-solid fa-chevron-right"></i> </a>
+                                                    </h3>
+                                                    <p>Stay in touch with your prospects & customers using email
+                                                        campagins</p>
+                                                </div>
+                                            </div>
+                                            <div class="productNavDetails">
+                                                <ul>
+                                                    <li>Cold Email Campaigns </li>
+                                                    <li>Unlimited Sender Accounts</li>
+                                                    <li>Email Open/Click/bounce Tracking </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>10000 prospects in Standard Plan</li>
+                                                    <li>AB Testing</li>
+                                                    <li>Advanced Workflows Automation</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                        <div class="navHoverProduct salesCRM">
+
+
+                                            <div class="productInfo">
+                                                <div class="peoductImg">
+                                                    <img src="./images/salesCRM-blue.svg" alt="">
+                                                </div>
+                                                <div class="productInfoDetail">
+                                                    <h3><span>Sales CRM</span>
+                                                        <a href=""><span>See all features</span><i
+                                                                class="fa-solid fa-chevron-right"></i> </a>
+                                                    </h3>
+                                                    <p>contacts, leads and customers management tool</p>
+                                                </div>
+                                            </div>
+                                            <div class="productNavDetails">
+                                                <ul>
+                                                    <li>Contact Management </li>
+                                                    <li>Account Management </li>
+                                                    <li>Conversation Logs </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Unified Email Inbox</li>
+                                                    <li>Email tracking & Activity logs</li>
+                                                    <li>Dynamic Contact Fields</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>360 Customer View</li>
+                                                    <li>Deal Management</li>
+                                                    <li>Unlimited Sales Pipelines</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="navHoverProduct wvTrack">
+
+
+                                            <div class="productInfo">
+                                                <div class="peoductImg">
+                                                    <img src="./images/websiteTracking-blue.svg" alt="">
+                                                </div>
+                                                <div class="productInfoDetail">
+                                                    <h3><span>Website Visitor Tracking</span>
+                                                        <a href=""><span>See all features</span><i
+                                                                class="fa-solid fa-chevron-right"></i> </a>
+                                                    </h3>
+                                                    <p>potential user tracking on website tool</p>
+                                                </div>
+                                            </div>
+                                            <div class="productNavDetails">
+                                                <ul>
+                                                    <li>Website visitor tracking </li>
+                                                    <li>Page views tracking </li>
+                                                    <li>Page Stay time tracking </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>Lead Engagement Tracking</li>
+                                                    <li>Campaign mapping</li>
+                                                    <li>User Source mapping</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="navHoverFooter">
+                                        <a id="one" href="">
+                                            <span>Get Started</span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                        <a href="">
+                                            <span>Contact Sales</span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
-                                <a href=""><span>Solutions</span><img class="chevronDown"
-                                        src="./images/chevron-up-solid.svg" alt=""></a>
+                            <li id="navSolutions">
+                                <a class="anchor"><span>Solutions</span><i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="navHoverContent hidden ">
+                                    <div class="navHoverUpper">
+                                        <div class="navSolutionsSideBar">
+                                            <h3>By Industry</h3>
+                                            <div class="navSolSideItems">
+                                                <div class="navSolSideItem">
+                                                    <div class="navSolSideItemImg">
+                                                        <img src="./images/shop-blue.svg" alt="">
+                                                    </div>
+                                                    <h4><span>Small business solution</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                </div>
+                                                <div class="navSolSideItem">
+                                                    <div class="navSolSideItemImg">
+                                                        <img src="./images/saas-blue.svg" alt="">
+                                                    </div>
+                                                    <h4><span>SaaS Platforms</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                </div>
+                                                <div class="navSolSideItem">
+                                                    <div class="navSolSideItemImg">
+                                                        <img src="./images/ecommerce-blue.svg" alt="">
+                                                    </div>
+                                                    <h4><span>E-Commerce</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                </div>
+                                                <div class="navSolSideItem">
+                                                    <div class="navSolSideItemImg">
+                                                        <img src="./images/plane-blue.svg" alt="">
+                                                    </div>
+                                                    <h4><span>Travel Agency</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                </div>
+                                                <div class="navSolSideItem">
+                                                    <div class="navSolSideItemImg">
+                                                        <img src="./images/home-blue.svg" alt="">
+                                                    </div>
+                                                    <h4><span>Real Estate Company</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                </div>
+                                                <div class="navSolSideItem">
+                                                    <div class="navSolSideItemImg">
+                                                        <img src="./images/branding-blue.svg" alt="">
+                                                    </div>
+                                                    <h4><span>Personal Branding agencies</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                </div>
+                                            </div>
+                                            <a id="allIndustry" href=""><span>See all Industry</span> <i
+                                                    class="fa-solid fa-chevron-right"></i></a>
+                                        </div>
+                                        <div class="navSolutionsDetails">
+                                            <h3>By Use Case</h3>
+                                            <div class="solutionFilters">
+
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/email-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Email Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Automate and optimize email campaigns for higher engagement.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/outbound-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Outbound Marketing Platform</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Execute and track outbound marketing efforts for better outreach
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/inbound-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Inbound Marketing Platform</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Drive inbound leads and nurture them through targeted strategies.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/marketingProjectManagement-blue.svg"
+                                                                alt="">
+                                                        </div>
+                                                        <h4><span>Marketing Project Management</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Manage marketing projects efficiently from start to finish.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/content-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Content Calendar Management</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Plan and schedule content seamlessly with an intuitive calendar.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/websiteTracking-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Website Visitor Tracking</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Drive inbound leads and nurture them through targeted strategies.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/lead-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Lead Management</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Manage marketing projects efficiently from start to finish.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/performance-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Performance Monitoring</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Plan and schedule content seamlessly with an intuitive calendar.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="solutionFilters hidden">
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span> 2 Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="solutionFilters hidden">
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>3 Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="solutionFilters hidden">
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>4 Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="solutionFilters hidden">
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>5 Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="solutionFilters hidden">
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                                <div class="solutionFilter">
+                                                    <div class="solutionFilterHead">
+                                                        <div class="solutionFilterImg">
+                                                            <img src="./images/social-blue.svg" alt="">
+                                                        </div>
+                                                        <h4><span>Social Media Marketing</span> <i
+                                                                class="fa-solid fa-chevron-right"></i> </h4>
+                                                    </div>
+                                                    <p>Schedule, track, and analyze social media campaigns with ease.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a id="allUseCases" href=""> <span>See all use cases</span> <i
+                                                    class="fa-solid fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
+                            <li id="navPricing">
                                 <a href="">Pricing</a>
                             </li>
-                            <li>
-                                <a href=""><span>Resources</span><img class="chevronDown"
-                                        src="./images/chevron-up-solid.svg" alt=""></a>
+                            <li id="navResources">
+                                <a class="anchor"><span>Resources</span><i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="navHoverContent hidden">
+                                    <div class="navHoverUpper">
+                                        <div class="navResourceGrids">
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/academy-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Academy</span> <i class="fa-solid fa-chevron-right"></i>
+                                                    </h4>
+                                                    <p>Comprehensive training for enhanced productivity.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/blog-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Blog</span> <i class="fa-solid fa-chevron-right"></i></h4>
+                                                    <p>Insights and updates for modern professionals.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/learn-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Learn</span> <i class="fa-solid fa-chevron-right"></i>
+                                                    </h4>
+                                                    <p>Curated courses to boost your skills.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/bulb-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Knowledgebase</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                    <p>In-depth articles for self-service support.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/book-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>How It Works</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                    <p>Step-by-step guide to maximize efficiency.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/workshop-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Workshops</span> <i class="fa-solid fa-chevron-right"></i>
+                                                    </h4>
+                                                    <p>Interactive sessions for hands-on learning.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/newsletter-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Newsletter</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                    <p>Regular updates and tips in your inbox.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/template-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Marketing Templates</span> <i
+                                                            class="fa-solid fa-chevron-right"></i></h4>
+                                                    <p>Pre-designed assets to streamline campaigns.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/community-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Community</span> <i class="fa-solid fa-chevron-right"></i>
+                                                    </h4>
+                                                    <p>Connect, collaborate, and grow together.</p>
+                                                </div>
+                                            </div>
+                                            <div class="navResourceGrid">
+                                                <div class="navResourceImg">
+                                                    <img src="./images/roadmap-blue.svg" alt="">
+                                                </div>
+                                                <div class="navResourceDetail">
+                                                    <h4><span>Roadmap</span> <i class="fa-solid fa-chevron-right"></i>
+                                                    </h4>
+                                                    <p>Future plans and upcoming features unveiled.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="navHoverFooter">
+                                        <a id="one" href="">
+                                            <span>Get Started</span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                        <a href="">
+                                            <span>Contact Sales</span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="navBtns">
-                    <a href="" class="navLogin"><img src="./images/Mask-group-4.webp" alt=""><span>Login</span></a>
-                    <a href=""><button class="navBtn black">Create Account</button></a>
+
+                    <div class="navBtns">
+                        <a href="" class="navLogin"><img src="./images/Mask-group-4.webp" alt=""><span>Login</span></a>
+                        <a href=""><button class="navBtn black">Create Account</button></a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -437,13 +1369,17 @@
                 </div>
             </div>
             <div class="lowerFooter">
-                <p>© 2023 ManagePlus, Inc.</p>
-                <p><img src="./images/globe.svg" alt=""> <span>English</span></p>
-                <p><a href="">Terms & Privacy</a></p>
-                <p><a href="">Cookie policy</a></p>
-                <p><a href="">Security</a></p>
-                <p><a href="telto:+919571073055">Contact Us: +919571073055</a> | <a href="mailto:contact@manageplus.io">
+                <div class="lowerFooterInner">
+                    <p>© 2023 ManagePlus, Inc.</p>
+                    <p><img src="./images/globe.svg" alt=""> <span>English</span></p>
+                    <p><a href="">Terms & Privacy</a></p>
+                    <p><a href="">Cookie policy</a></p>
+                    <p><a href="">Security</a></p>
+                </div>
+                <p class="lastChild"><span>Contact Us:</span><a href="telto:+919571073055">+919571073055 |</a> <a
+                        href="mailto:contact@manageplus.io">
                         contact@manageplus.io</a></p>
+
             </div>
         </footer>
     </main>
