@@ -1065,6 +1065,14 @@
         width: 20px;
         height: 20px;
     }
+
+    .videoYt{
+        padding: 10px;
+    }
+
+    .videoYt iframe{
+        height: 200px;
+    }
 }
 
 /* QUick CTA */
