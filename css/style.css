@@ -878,12 +878,19 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .lowerFooter {
+    .lowerFooterInner {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         
     }
 
+    .lowerFooter{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lowerFooter .lastChils{
+    }
     .middleFooter {
         gap: 1.5rem;
     }

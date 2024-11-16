@@ -289,6 +289,8 @@
     .heroCardHeadImg{
         width: 35px;
         height: 35px;
+        min-width: 35px;
+        min-height: 35px;
     }
 
     .heroCardHeadImg img{
@@ -303,7 +305,6 @@
     .heroCard{
         width: 100%;
         padding-top: 10px;
-        padding-left: 10px;
         text-wrap: wrap;
     }
 
@@ -312,15 +313,32 @@
     }
 
     .heroCardDetail{
-        padding: 10px;
         padding-right: 0;
+        margin-top: 20px;
     }
     .heroCardDetail ul li{
         font-size: 10px;
+        gap: 3px;
     }
 
     .heroCardDetail ul{
         gap: 10px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+
+    .heroCardHover{
+        padding: 10px;
+    }
+    
+    .heroCardHover p{
+        font-size: 12px;
+    }
+
+    .heroCardHover button{
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 12px;
     }
 
     
@@ -1474,6 +1492,26 @@
 
     .pricingCard ul li a img{
         width: 100%;
+    }
+
+    .currencyBtns{
+        position: static;
+        height: 30px;
+    }
+
+    .btn1{
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .btnCurrency{
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+
+    .pricingBtnDiv{
+        justify-content: space-between;
+        align-items: center;
     }
 
 } 
