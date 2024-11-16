@@ -1,0 +1,490 @@
+/* Hero */
+
+.heroSmStudio {
+    padding: 1.75rem 5.625rem;
+    display: flex;
+    justify-content: space-between;
+    background: url("../images/hero-smStudio-bg.png") no-repeat center center / cover;
+}
+
+.heroSmStudioContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.SmStudioContentUpper {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+#smStudioUpperPara {
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+
+.smIconImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 13px;
+}
+
+
+.heroSmStudioContent h1 {
+    color: #000;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 122%;
+    text-wrap: balance;
+    position: relative;
+    z-index: 0;
+    margin-top: 1.625rem;
+}
+
+.heroSmStudioContent h1 img {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+    width: 68%;
+}
+
+.heroSmStudioContent p {
+    color: #000;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130.435%;
+    letter-spacing: 0.46px;
+    text-wrap: balance;
+    margin-top: 1.625rem;
+}
+
+.smStudioBtnsDiv {
+    margin-top: 2.4375rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Social Media Short Info */
+
+.smShortInfo {
+    padding: 2rem 2.3125rem;
+    background-color: white;
+    position: relative;
+    background: url("../images/smShortInfo-bg.png") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smShortInfo h2 {
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+}
+
+.smShortInfo h2 span {
+    color: #6457F9;
+}
+
+.smShortInfo p {
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120.833%;
+    margin-top: 10px;
+}
+
+.smQuate {
+    position: absolute;
+    left: 4rem;
+    top: 50%;
+}
+
+.socialLogos {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5625rem;
+}
+
+
+
+/* Social Media Studio Features */
+
+.smFeatures {
+    background: url('../images/smFeatureBg.png') no-repeat center center / cover;
+    padding: 1.875rem 2.25rem;
+}
+
+.smFeatures h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.smFeaturesCard {
+    border-radius: 12px;
+    position: relative;
+}
+
+.smFeaturesCard p{
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    color: #000;
+font-size: 1.625rem;
+font-style: normal;
+font-weight: 500;
+line-height: 130.769%;
+}
+
+.smFeaturesCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2.5rem;
+    gap: 15px;
+}
+
+.smFeaturesCard img{
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+#smFeaturesCard1{
+    background: linear-gradient(180deg, #F5F7FD 0%, #C8C3FF 100%);
+}
+
+#smFeaturesCard2{
+    background: linear-gradient(180deg, #F4FEFB 0%, #EBF9F5 100%);
+}
+
+#smFeaturesCard3{
+    background: linear-gradient(180deg, #F9FEFF 0%, #CBF4FF 100%);
+}
+
+#smFeaturesCard4{
+    background: linear-gradient(180deg, #FEFDFF 0%, #E9CDFF 100%);
+}
+
+
+#smFeaturesCard5{
+    background: linear-gradient(180deg, #F5F7FD 0%, #C8C3FF 100%);
+}
+#smFeaturesCard6{
+    background: linear-gradient(180deg, #FFFBFC 0%, #FFE4EA 100%);
+}
+
+#smFeaturesCard7{
+    background: linear-gradient(180deg, #F2F6FF 0%, #E0EAFF 100%);
+}
+
+#smFeaturesCard8{
+    background: linear-gradient(180deg, #FFF9F3 0%, #FFF3E8 100%);
+}
+
+/* Social Media Studio Clients */
+
+.smClients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.125rem;
+    padding: 4.375rem 9.375rem;
+}
+
+.smClientsLogos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.6875rem;
+}
+
+
+/* QUick CTA */
+
+.btn.purple {
+    background: #6457F9;
+    color: white;
+    border: 0;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    width:12.875rem ;
+}
+
+.quickCTA {
+    display: flex;
+    background: url('../images/quickCTA-bg.png') no-repeat center center/cover;
+    margin: 0 2.25rem;
+    padding: 0 1.5rem;
+    gap: 2.625rem;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.quickImg img {
+    height: 100%;
+}
+
+.quickDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.125rem;
+}
+
+.quickDetails h2 {
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    /* 114.286% */
+}
+
+.quickDetails p {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+}
+
+.quickBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6rem;
+}
+
+/* How Manage Plus */
+
+.howManageplus{
+    background-image: linear-gradient(to top, #f9f4fa, #f8f2fa, #f7f0f9, #f6eff9, #f5edf9, #f5eef9, #f6eefa, #f6effa, #f8f2fb, #f9f6fc, #fbf9fd, #fdfcfe);
+    padding: 2.25rem 9.375rem;
+}
+
+.howManageplus h2{
+    color: #000;
+text-align: center;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 131.25% */
+}
+
+.howManageplusCards{
+    margin-top: 3.375rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3125rem;
+}
+
+.howManageplusCard{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5.557px 9.88px 0px rgba(159, 162, 191, 0.18), 0px 1.235px 1.235px 0px rgba(159, 162, 191, 0.32);
+    padding: 2.375rem;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.howManageplusImg{
+    background:#F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    border-radius: 6px;
+    width: 53px;
+    height: 53px;
+}
+
+
+
+.howManageplusImg img{
+    width: 35px;
+    height: 35px;
+    /* filter: invert(2); */
+}
+
+.howManageplusCard.active{
+    border-left: 3px solid #6457F9;
+
+}
+
+.howManageplusCard.active .howManageplusImg{
+    background: #6457F9;
+}
+
+.howManageplusCard.howManageplusCard.active img{
+    filter: invert(0);
+}
+
+.howManageplusContent h4{
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: 130%;
+}
+
+.howManageplusContent p{
+    color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+margin-top: 10px;
+}
+
+#quickCTA2{
+    background: url('../images/quickCTA2-bg.png') no-repeat center center/cover;
+}
+
+#quickCTA2 h2{
+    font-size: 2.5rem;
+}
+
+#quickCTA2 h2 span{
+    position: relative;
+    z-index: 0;
+}
+
+#quickCTA2 h2 span img{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: -1;
+    width: 100%;
+}
+
+.quickCTA-bg{
+    background: #f9f4fa;
+}
+
+/* SOcial Media Interagtions */
+
+.smIntegrations{
+    padding: 4.375rem 2.25rem ;
+    background: #f9f4fa;
+
+}
+
+.smIntegrations h2{
+    color: #000;
+text-align: center;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+}
+
+.smIntegrationCards{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    gap: 1.5rem;
+}
+
+.smIntegrationCard{
+    width: 148px;
+    height: 149px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 17px;
+    box-shadow: 0px 5.557px 9.88px 0px rgba(159, 162, 191, 0.18), 0px 1.235px 1.235px 0px rgba(159, 162, 191, 0.32);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.smIntegrationCardImg{
+    width: 50px;
+    height: 50px;
+}
+
+.smIntegrationCardImg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Why SOcial media Marketing */
+
+.whysmMarketing{
+    padding: 0 9.375rem;
+    background: #f9f4fa;
+    padding-bottom: 4.375rem;
+}
+
+.whysmMarketing h2{
+    color: #000;
+text-align: center;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+}
+
+.whysmMarketingBullets{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 1.5rem;
+}
+
+.whysmMarketingBullet{
+    padding: 2rem 1.5rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.whysmMarketingBullet p span{
+    font-weight: 600;
+}
+
+.whysmMarketingBullet p{
+    color: #000;
+    font-size: 1.3125rem;
+    font-style: normal;
+}
+
+#marketingBullet1{
+    border-left: 3px solid #6457F9;
+}
+
+#marketingBullet2{
+    border-left: 3px solid #F84C6F;
+}
+
+#marketingBullet3{
+    border-left: 3px solid #0ACF83;
+}
+
