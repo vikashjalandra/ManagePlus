@@ -88,7 +88,6 @@
 
 
 .heroCard {
-    padding-left: 1.125rem;
     padding-top: 1.125rem;
     border-radius: 9px;
     display: flex;
@@ -99,6 +98,7 @@
 }
 
 .heroCardHead {
+    padding-left: 1.125rem;
     display: flex;
     justify-content: space-between;
     padding-right: 1.125rem;
@@ -138,10 +138,51 @@
 }
 
 .heroCardDetail {
-    background: white;
-    padding: 1.125rem;
-    border-radius: 11px 0 0 0;
     margin-top: 2.375rem;
+    position: relative;
+}
+
+.heroCardDetail ul{
+    border-radius: 11px 0 0 0;
+    padding: 1.125rem;
+    background: white;
+    margin-left: 1.125rem;
+}
+
+.heroCardHover{
+    display: none;
+    border-radius: 11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem;
+    background: url('../images/heroCardHover-bg.png') no-repeat center center/cover;
+    animation-name:hoverUp;
+    animation-duration:0.5s
+}
+
+@keyframes hoverUp{
+    to {height: 100%;opacity: 1}
+    from {height:0 ;opacity: 0}
+}
+
+
+
+.heroCardHover p{
+    font-size: 1rem;
+    color: white;
+}
+
+.heroCardHover button{
+    margin-top: 2rem;
+}
+
+.whiteFill{
+    padding: 10px 20px ;
+    background: white;
+    border: 1px solid white;
+    font-size: 14px;
 }
 
 .heroCardDetail ul {
@@ -158,6 +199,8 @@
     font-size: 12px;
     font-weight: 400;
 }
+
+
 
 @media screen and (max-width: 1024px) {
     .heroInfo h1 {
@@ -542,6 +585,10 @@
     .quickTourCards{
         margin-top: 10px;
         gap: 5px;
+    }
+
+    .quickTourCard h3{
+        font-size: 14px;
     }
 }
 

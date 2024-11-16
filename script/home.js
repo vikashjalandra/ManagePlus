@@ -244,3 +244,15 @@ inrBtn.addEventListener('click', () => {
     }
 }
 )
+
+const heroCards = document.querySelectorAll('.heroCard')
+const heroCardHover = document.querySelectorAll('.heroCardHover')
+
+heroCards.forEach((card, index) => {
+    card.addEventListener('mouseover', () => {
+        heroCardHover[index].style.display = 'block'
+    })
+    card.addEventListener('mouseout', () => {
+        heroCardHover[index].style.display = 'none'
+    })
+})
