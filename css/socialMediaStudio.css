@@ -7,6 +7,10 @@
     background: url("../images/hero-smStudio-bg.png") no-repeat center center / cover;
 }
 
+#heroEmailStudio{
+    background: url("../images/hero-emailStudio-bg.png") no-repeat center center / cover;
+}
+
 .heroSmStudioContent {
     display: flex;
     flex-direction: column;
@@ -76,6 +80,114 @@
     gap: 1.5rem;
 }
 
+.hoverFeaturesCard{
+    position: absolute;
+    border-radius: 12px;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background:#6457F9;
+    z-index: 5;
+    padding: 2rem;
+} 
+
+.hoverFeaturesCard span{
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width:1024px) {
+    .heroSmStudio {
+        flex-direction: column-reverse;
+    }
+
+    .heroSmStudioImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroSmStudioContent {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .heroSmStudioContent h1 {
+        text-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .heroSmStudioContent h1 img {
+        display: none;
+    }
+
+    .heroSmStudioContent p {
+        text-wrap: wrap;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .heroSmStudio {
+        padding: 1rem;
+    }
+
+    .heroSmStudioImg {
+        width: 100%;
+    }
+
+    .heroSmStudioImg img {
+        width: 100%;
+    }
+   
+
+    
+}
+
+@media screen and (max-width:445px) {
+    .smIconImg {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+    }
+
+    .SmStudioContentUpper{
+        gap: 8px;
+    }
+
+    .smIconImg img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #smStudioUpperPara {
+        font-size: 20px;
+    }
+
+    .heroSmStudio h1 {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .heroSmStudioContent p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .smStudioBtnsDiv {
+        gap: 10px;
+        margin-top: 1.5rem;
+    }
+
+    .smStudioBtnsDiv .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    
+}
+
 /* Social Media Short Info */
 
 .smShortInfo {
@@ -87,6 +199,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    z-index: 0;
 }
 
 .smShortInfo h2 {
@@ -125,6 +238,51 @@
     margin-top: 1.5625rem;
 }
 
+.smQuate {
+    z-index: -1;
+}
+
+@media screen and (max-width:768px) {
+    .smShortInfo {
+        padding: 1rem;
+    }
+
+    .smShortInfo h2 {
+        font-size: 1.7rem;
+    }
+
+    .smShortInfo p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .smShortInfo h2 {
+        font-size: 1.15rem;
+    }
+
+    .smShortInfo p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .smQuate {
+        left: 0px;
+        top: 10px;
+        width: 30px;
+    }
+
+    .socialLogos {
+        gap: 1rem;
+        margin-top: 10px;
+    }
+
+    .socialLogos img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
 
 
 /* Social Media Studio Features */
@@ -146,79 +304,161 @@
 .smFeaturesCard {
     border-radius: 12px;
     position: relative;
+    cursor: pointer;
 }
 
-.smFeaturesCard p{
+.smFeaturesCard p {
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
     color: #000;
-font-size: 1.625rem;
-font-style: normal;
-font-weight: 500;
-line-height: 130.769%;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130.769%;
 }
 
-.smFeaturesCards{
+.smFeaturesCards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 2.5rem;
     gap: 15px;
 }
 
-.smFeaturesCard img{
+.smFeaturesCard img {
     border-radius: 12px;
     height: 100%;
     width: 100%;
 }
 
-#smFeaturesCard1{
+#smFeaturesCard1 {
     background: linear-gradient(180deg, #F5F7FD 0%, #C8C3FF 100%);
 }
 
-#smFeaturesCard2{
+#smFeaturesCard2 {
     background: linear-gradient(180deg, #F4FEFB 0%, #EBF9F5 100%);
 }
 
-#smFeaturesCard3{
+#smFeaturesCard3 {
     background: linear-gradient(180deg, #F9FEFF 0%, #CBF4FF 100%);
 }
 
-#smFeaturesCard4{
+#smFeaturesCard4 {
     background: linear-gradient(180deg, #FEFDFF 0%, #E9CDFF 100%);
 }
 
 
-#smFeaturesCard5{
+#smFeaturesCard5 {
     background: linear-gradient(180deg, #F5F7FD 0%, #C8C3FF 100%);
 }
-#smFeaturesCard6{
+
+#smFeaturesCard6 {
     background: linear-gradient(180deg, #FFFBFC 0%, #FFE4EA 100%);
 }
 
-#smFeaturesCard7{
+#smFeaturesCard7 {
     background: linear-gradient(180deg, #F2F6FF 0%, #E0EAFF 100%);
 }
 
-#smFeaturesCard8{
+#smFeaturesCard8 {
     background: linear-gradient(180deg, #FFF9F3 0%, #FFF3E8 100%);
 }
 
+.hoverFeaturesCard{
+    padding: 10px;
+    height: 50%;
+}
+
+.hoverFeaturesCard span{
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width:1024px) {
+    .smFeaturesCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:445px) {
+    .smFeatures {
+        padding: 1rem;
+    }
+
+    .smFeatures h2 {
+        font-size: 1.5rem;
+    }
+
+    .smFeaturesCards {
+        margin-top: 1rem;
+        gap: 10px;
+    }
+
+    .smFeaturesCard p {
+        top: 7px;
+        left: 7px;
+        font-size: 14px;
+    }
+
+    .hoverFeaturesCard{
+        height: 65%;
+        padding: 7px;
+    }
+    .hoverFeaturesCard span{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:344px){
+    .hoverFeaturesCard span{
+        font-size: 10px;
+    }
+} 
+
 /* Social Media Studio Clients */
 
-.smClients{
+.smClients {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3.125rem;
-    padding: 4.375rem 9.375rem;
+    padding: 4.375rem 2rem;
 }
 
-.smClientsLogos{
+.smClientsLogos {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2.6875rem;
+}
+
+.smClients h2 {
+    text-align: center;
+}
+
+.smClientsLogos {
+    overflow: scroll;
+    width: 100%;
+    scrollbar-width: none;
+}
+
+@media screen and (max-width:1024px) {
+    .smClientsLogos {
+        justify-content: start;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .smClients{
+        gap: 1.5rem;
+        padding: 20px 16px;
+        width: 100%;
+    }
+
+    .smClientsLogos img{
+        width: 100px;
+    }
 }
 
 
@@ -230,14 +470,13 @@ line-height: 130.769%;
     border: 0;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
-    width:12.875rem ;
+    width: 12.875rem;
 }
 
 .quickCTA {
     display: flex;
     background: url('../images/quickCTA-bg.png') no-repeat center center/cover;
     margin: 0 2.25rem;
-    padding: 0 1.5rem;
     gap: 2.625rem;
     justify-content: space-between;
     border-radius: 8px;
@@ -272,6 +511,10 @@ line-height: 130.769%;
     /* 133.333% */
 }
 
+.quickImg img {
+    border-radius: 8px;
+}
+
 .quickBtns {
     display: flex;
     justify-content: center;
@@ -279,30 +522,65 @@ line-height: 130.769%;
     padding-right: 6rem;
 }
 
+@media screen and (max-width:1024px) {
+    .quickImg {
+        display: none;
+    }
+
+    .quickCTA {
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .quickCTA {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quickDetails h2 {
+        text-align: center;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .quickBtns {
+        padding-right: 0;
+    }
+
+    .quickBtns .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        width: 160px;
+    }
+}
+
 /* How Manage Plus */
 
-.howManageplus{
+.howManageplus {
     background-image: linear-gradient(to top, #f9f4fa, #f8f2fa, #f7f0f9, #f6eff9, #f5edf9, #f5eef9, #f6eefa, #f6effa, #f8f2fb, #f9f6fc, #fbf9fd, #fdfcfe);
     padding: 2.25rem 9.375rem;
 }
 
-.howManageplus h2{
+.howManageplus h2 {
     color: #000;
-text-align: center;
-font-size: 2rem;
-font-style: normal;
-font-weight: 500;
-line-height: 42px; /* 131.25% */
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    /* 131.25% */
 }
 
-.howManageplusCards{
+.howManageplusCards {
     margin-top: 3.375rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.3125rem;
 }
 
-.howManageplusCard{
+.howManageplusCard {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 5.557px 9.88px 0px rgba(159, 162, 191, 0.18), 0px 1.235px 1.235px 0px rgba(159, 162, 191, 0.32);
@@ -311,8 +589,8 @@ line-height: 42px; /* 131.25% */
     gap: 1.25rem;
 }
 
-.howManageplusImg{
-    background:#F6F6F6;
+.howManageplusImg {
+    background: #F6F6F6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,56 +602,106 @@ line-height: 42px; /* 131.25% */
 
 
 
-.howManageplusImg img{
+.howManageplusImg img {
     width: 35px;
     height: 35px;
     /* filter: invert(2); */
 }
 
-.howManageplusCard.active{
+/* .howManageplusCard.active {
     border-left: 3px solid #6457F9;
 
-}
+} */
 
-.howManageplusCard.active .howManageplusImg{
+/* .howManageplusCard.active .howManageplusImg {
     background: #6457F9;
-}
+} */
 
-.howManageplusCard.howManageplusCard.active img{
+.howManageplusCard.howManageplusCard.active img {
     filter: invert(0);
 }
 
-.howManageplusContent h4{
+.howManageplusContent h4 {
     color: #000;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 600;
-line-height: 130%;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
 }
 
-.howManageplusContent p{
+.howManageplusContent p {
     color: #000;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
-margin-top: 10px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
 }
 
-#quickCTA2{
+@media screen and (max-width:1024px) {
+    .howManageplus {
+        padding: 2rem;
+    }
+
+    .howManageplusCard {
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .howManageplus {
+        padding: 1rem;
+    }
+
+    .howManageplusCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .howManageplus h2 {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .howManageplus h2 br {
+        display: none;
+    }
+
+    .howManageplusCards{
+        margin-top: 20px;
+        gap: 16px;
+    }
+
+    .howManageplusCard {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .howManageplusContent h4{
+        font-size: 18px;
+    }
+
+    .howManageplusContent p{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
+
+/* Quick CTA2 */
+
+#quickCTA2 {
     background: url('../images/quickCTA2-bg.png') no-repeat center center/cover;
 }
 
-#quickCTA2 h2{
+#quickCTA2 h2 {
     font-size: 2.5rem;
 }
 
-#quickCTA2 h2 span{
+#quickCTA2 h2 span {
     position: relative;
     z-index: 0;
 }
 
-#quickCTA2 h2 span img{
+#quickCTA2 h2 span img {
     position: absolute;
     left: 0;
     bottom: 5px;
@@ -381,35 +709,62 @@ margin-top: 10px;
     width: 100%;
 }
 
-.quickCTA-bg{
+.quickCTA-bg {
     background: #f9f4fa;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .quickDetails h2 img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .quickCTA {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    #quickCTA2 h2 {
+        text-align: center;
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .quickBtns {
+        padding-right: 0;
+    }
 }
 
 /* SOcial Media Interagtions */
 
-.smIntegrations{
-    padding: 4.375rem 2.25rem ;
+.smIntegrations {
+    padding: 4.375rem 2.25rem;
     background: #f9f4fa;
 
 }
 
-.smIntegrations h2{
+.smIntegrations h2 {
     color: #000;
-text-align: center;
-font-size: 2rem;
-font-style: normal;
-font-weight: 500;
-line-height: 150%;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
 }
 
-.smIntegrationCards{
+.smIntegrationCards {
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;
     gap: 1.5rem;
 }
 
-.smIntegrationCard{
+.smIntegrationCard {
     width: 148px;
     height: 149px;
     display: flex;
@@ -424,67 +779,137 @@ line-height: 150%;
     text-align: center;
 }
 
-.smIntegrationCardImg{
+.smIntegrationCardImg {
     width: 50px;
     height: 50px;
 }
 
-.smIntegrationCardImg img{
+.smIntegrationCardImg img {
     width: 100%;
     height: 100%;
 }
 
+@media screen and (max-width:768px) {
+    .smIntegrationCards {
+        display: grid;
+        grid-template-columns: repeat(3, 0fr);
+        gap: 01rem;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .smIntegrationCards {
+        grid-template-columns: repeat(2, 0fr);
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .smIntegrations{
+        padding: 16px;
+    }
+
+    .smIntegrations h2{
+        font-size: 1.5rem;
+    }
+    .smIntegrationCard{
+        gap: 10px;
+        font-size: 14px;
+    }
+}
 
 /* Why SOcial media Marketing */
 
-.whysmMarketing{
+.whysmMarketing {
     padding: 0 9.375rem;
     background: #f9f4fa;
     padding-bottom: 4.375rem;
 }
 
-.whysmMarketing h2{
+.whysmMarketing h2 {
     color: #000;
-text-align: center;
-font-size: 2rem;
-font-style: normal;
-font-weight: 500;
-line-height: 150%;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
 }
 
-.whysmMarketingBullets{
+.whysmMarketingBullets {
     display: flex;
     flex-direction: column;
     gap: 14px;
     margin-top: 1.5rem;
 }
 
-.whysmMarketingBullet{
+.whysmMarketingBullet {
     padding: 2rem 1.5rem;
     width: 100%;
     background-color: white;
     border-radius: 6px;
 }
 
-.whysmMarketingBullet p span{
+.whysmMarketingBullet p span {
     font-weight: 600;
 }
 
-.whysmMarketingBullet p{
+.whysmMarketingBullet p {
     color: #000;
     font-size: 1.3125rem;
     font-style: normal;
 }
 
-#marketingBullet1{
+#marketingBullet1 {
     border-left: 3px solid #6457F9;
 }
 
-#marketingBullet2{
+#marketingBullet2 {
     border-left: 3px solid #F84C6F;
 }
 
-#marketingBullet3{
+#marketingBullet3 {
     border-left: 3px solid #0ACF83;
 }
 
+@media screen and (max-width:1024px) {
+
+    .whysmMarketing {
+        padding: 2rem;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .whysmMarketing{
+        padding: 16px;
+        padding-bottom: 20px;
+    }
+
+    .whysmMarketing h2{
+        font-size: 1.5rem;
+    }
+
+    .whysmMarketingBullets{
+        margin-top: 16px;
+    }
+
+    .whysmMarketingBullet{
+        padding: 10px;
+    }
+
+    .whysmMarketingBullet p{
+        font-size: 16px;
+    }
+
+    #marketingBullet1 {
+        border-left: 2px solid #6457F9;
+    }
+    
+    #marketingBullet2 {
+        border-left: 2px solid #F84C6F;
+    }
+    
+    #marketingBullet3 {
+        border-left: 2px solid #0ACF83;
+    }
+
+}

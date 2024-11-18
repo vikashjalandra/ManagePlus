@@ -256,3 +256,10 @@ heroCards.forEach((card, index) => {
         heroCardHover[index].style.display = 'none'
     })
 })
+
+
+const clientLogos = document.querySelector('.clientLogos')
+
+setInterval(() => {
+    clientLogos.scrollLeft = clientLogos.scrollLeft + 120
+}, 4000)

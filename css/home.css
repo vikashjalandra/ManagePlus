@@ -605,6 +605,14 @@
         gap: 5px;
     }
 
+    .quickTourCard{
+        padding: 10px 20px;
+    }
+
+    .quickTourCard.active{
+        padding: 10px 20px;
+    }
+
     .quickTourCard h3{
         font-size: 14px;
     }
@@ -650,6 +658,7 @@
         overflow: scroll;
         scrollbar-width: none;
         justify-content: start;
+        scroll-behavior: smooth;
     }
 
     .clients p {
@@ -669,6 +678,10 @@
     .clients p{
         width: 100%;
         font-size:16px ;
+    }
+
+    .clientLogos img{
+        width: 120px;
     }
 }
 

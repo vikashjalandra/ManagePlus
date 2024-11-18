@@ -523,6 +523,10 @@ align-items: center;
 }
 
 
+#heroEmailStudio h1 img{
+    width: 50%;
+}
+
 
 @media screen and (max-width:1024px) {
     .navHidden {
@@ -669,6 +673,9 @@ align-items: center;
 }
 
 @media screen and (max-width:445px){
+    nav{
+        padding: 16px;
+    }
     .productNavDetails{
         flex-direction: column;
     }
@@ -701,6 +708,16 @@ align-items: center;
         padding: 10px 0;
         gap: 5px;
     }
+
+    .productNavDetails ul{
+        gap: 10px;
+    }
+
+    .productNavDetails{
+        gap: 20px;
+    }
+    
+
 }
 
 
@@ -872,7 +889,7 @@ footer {
 
 @media screen and (max-width:445px){
     footer{
-        padding: 32px 10px;
+        padding: 32px 16px;
     }
     .upperFooter {
         grid-template-columns: repeat(1, 1fr);
@@ -889,8 +906,7 @@ footer {
         gap: 20px;
     }
 
-    .lowerFooter .lastChils{
-    }
+    
     .middleFooter {
         gap: 1.5rem;
     }
