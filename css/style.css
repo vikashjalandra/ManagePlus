@@ -199,6 +199,7 @@ nav {
 }
 
 .navHoverProduct {
+    cursor: pointer;
     padding: 1.875rem;
 }
 

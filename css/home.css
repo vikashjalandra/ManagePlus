@@ -1860,4 +1860,8 @@
     .testimonials{
         padding: 32px 10px;
     }
+
+    .testimonialCard{
+        min-width: 97%;
+    }
 }
