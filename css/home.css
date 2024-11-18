@@ -1658,7 +1658,8 @@
     .featureCards{
         display: flex;
         flex-direction: row;
-        overflow: hidden;
+        overflow-x: scroll;
+        overflow-y: hidden;
         scroll-behavior: smooth;
         gap: 10px;
     }
@@ -1815,7 +1816,8 @@
 @media screen and (max-width:768px) {
     .testimonialCards {
         width: 100%;
-        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: scroll;
         scroll-behavior: smooth;
     }
 
@@ -1841,6 +1843,7 @@
         align-items: center;
         cursor: pointer;
         padding: 3px;
+        border: 1px solid black;
     }
 
     .slideBtn.right {
@@ -1850,5 +1853,11 @@
     .slideBtn img {
         width: 100%;
         height: 100%;
+    }
+}
+
+@media screen and (max-width:768px) { 
+    .testimonials{
+        padding: 32px 10px;
     }
 }
